@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arta Pedia ID - Auto Order Nokos</title>
+  <style>
+    :root {
+      --bg: #070b1a;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: #ecf2ff;
+      --muted: #b8c4e8;
+      --accent: #5ef6d6;
+      --accent-2: #7d8dff;
+      --danger: #ff6b9a;
+      --success: #6dffa8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Poppins, system-ui, -apple-system, Segoe UI, sans-serif;
+      background: radial-gradient(1200px 700px at 10% -20%, #1c2d6b 0, transparent 50%),
+                  radial-gradient(800px 500px at 90% 20%, #2d1d63 0, transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: min(1080px, 92vw);
+      margin: 0 auto;
+      padding: 2rem 0 6rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 3.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: .45rem .85rem;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      color: var(--accent);
+      letter-spacing: .03em;
+      font-weight: 600;
+      background: rgba(94, 246, 214, .08);
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      margin: 1rem 0 .8rem;
+      line-height: 1.12;
+    }
+
+    .lead {
+      width: min(780px, 100%);
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.3vw, 1.2rem);
+      line-height: 1.7;
+    }
+
+    .cta {
+      margin-top: 1.8rem;
+      display: inline-flex;
+      gap: .7rem;
+      align-items: center;
+      text-decoration: none;
+      color: #031020;
+      background: linear-gradient(135deg, var(--accent), #8dfcff);
+      padding: .95rem 1.4rem;
+      border-radius: 12px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(94, 246, 214, .35);
+      transition: .2s transform ease;
+    }
+
+    .cta:hover { transform: translateY(-2px) scale(1.01); }
+
+    .cards {
+      margin-top: 2.3rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      padding: 1.1rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .card h3 { margin: .3rem 0 .5rem; }
+    .card p { margin: 0; color: var(--muted); }
+
+    .section {
+      margin-top: 2.2rem;
+      background: rgba(13, 19, 44, .65);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      padding: 1.3rem;
+    }
+
+    .section h2 { margin-top: 0; }
+
+    .popup-wrap {
+      position: fixed;
+      right: 12px;
+      bottom: 12px;
+      width: min(310px, 80vw);
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    .popup {
+      pointer-events: auto;
+      background: linear-gradient(140deg, rgba(125,141,255,.95), rgba(94,246,214,.92));
+      color: #001330;
+      border-radius: 10px;
+      padding: .7rem .8rem;
+      margin-top: .55rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,.35);
+      animation: slideIn .45s ease, fadeOut .5s ease 5s forwards;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(35px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; transform: translateX(20px); height: 0; margin: 0; padding: 0; }
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      color: #a7b8df;
+      font-size: .92rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <span class="badge">SMM Panel • Auto Order Nokos • Full Otomatis</span>
+      <h1>Arta Pedia ID: Solusi <span style="color:var(--accent)">Nokos Murah</span> dan Cepat</h1>
+      <p class="lead">
+        Bot auto order nokos dari <strong>Arta Pedia ID</strong> dirancang <strong>aman</strong>, <strong>mudah digunakan</strong>,
+        <strong>harga terjangkau</strong>, dan <strong>100% otomatis</strong>. Cocok untuk kebutuhan SMM panel, top up,
+        dan kebutuhan verifikasi akun tanpa ribet.
+      </p>
+      <a class="cta" href="https://t.me/artapediaidnokos_bot" target="_blank" rel="noopener noreferrer">
+        🚀 Gass Order Sekarang
+      </a>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>🔐 Aman & Terpercaya</h3>
+        <p>Sistem kami berjalan otomatis dengan alur transaksi yang jelas dan minim kendala.</p>
+      </article>
+      <article class="card">
+        <h3>⚡ Super Cepat</h3>
+        <p>Proses order nomor kosong berlangsung instan. Tinggal klik, bayar, nomor masuk.</p>
+      </article>
+      <article class="card">
+        <h3>💸 Harga Bersahabat</h3>
+        <p>Dapatkan layanan nokos murah dengan kualitas premium untuk segala kebutuhanmu.</p>
+      </article>
+      <article class="card">
+        <h3>🤖 Full Otomatis</h3>
+        <p>Bot bekerja 24/7 tanpa admin manual, jadi order kapan pun tetap lancar.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Kenapa Harus di Arta Pedia ID?</h2>
+      <p class="lead" style="text-align:left; width:100%;">
+        Di sini kamu nggak cuma beli nokos, tapi dapat pengalaman order yang rapi dan profesional.
+        Cukup buka bot Telegram <strong>@artapediaidnokos_bot</strong>, pilih layanan, lakukan pembayaran,
+        lalu sistem otomatis memproses pesananmu sampai selesai. Tidak perlu menunggu lama.
+      </p>
+      <p class="lead" style="text-align:left; width:100%; margin-top:1rem;">
+        <strong>"𝐓𝐄𝐌𝐏𝐀𝐓 𝐁𝐄𝐋𝐈 𝐍𝐎𝐊𝐎𝐒 𝐌𝐔𝐑𝐀𝐇" = "@artapediaidnokos_bot"</strong>
+      </p>
+    </section>
+
+    <p class="footer-note">© 2026 Arta Pedia ID — Auto Order Nokos Indonesia.</p>
+  </main>
+
+  <aside class="popup-wrap" id="popupWrap" aria-live="polite"></aside>
+
+  <script>
+    const names = [
+      'Andi', 'Rizky', 'Nadia', 'Fajar', 'Vina', 'Hendra',
+      'Aisyah', 'Rian', 'Mira', 'Yoga', 'Salsa', 'Dimas'
+    ];
+
+    const services = [
+      'Nokos Telegram',
+      'Nokos WhatsApp',
+      'Nokos Gmail',
+      'Nokos Facebook',
+      'Nokos TikTok'
+    ];
+
+    const popupWrap = document.getElementById('popupWrap');
+
+    function spawnPopup() {
+      const name = names[Math.floor(Math.random() * names.length)];
+      const service = services[Math.floor(Math.random() * services.length)];
+      const minutes = Math.floor(Math.random() * 9) + 1;
+
+      const el = document.createElement('div');
+      el.className = 'popup';
+      el.textContent = `${name} baru saja membeli ${service} • ${minutes} menit lalu`;
+      popupWrap.prepend(el);
+
+      setTimeout(() => el.remove(), 5600);
+
+      while (popupWrap.children.length > 4) {
+        popupWrap.lastElementChild.remove();
+      }
+    }
+
+    spawnPopup();
+    setInterval(spawnPopup, 1000);
+  </script>
+</body>
+</html>
